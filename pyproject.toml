@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pergunte_russel"
+version = "0.1.0"
+description = "projeto streamlit"
+authors = ["Russel Dataset <wallissom12@gmail.com>"]
+packages = [{include = "pergunte_russel"}]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+streamlit = "^1.42.0"
+fuzzywuzzy = "^0.18.0"
+python-levenshtein = "^0.26.1"
+pandas = "^2.2.3"
+openpyxl = "^3.1.5"
+unidecode = "^1.3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
