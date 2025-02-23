@@ -11,7 +11,7 @@ ADMIN_PASSWORD = "admin123"
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_excel(r"C:\\Users\\User\\Desktop\\INTELIGENCIA\\INT\\pergunte_russel\\base.xlsx")
+        df = pd.read_excel("base.xlsx")
         df["Palavras-Chave"] = df["Palavras-Chave"].astype(str)
         df["Palavras-Chave"] = df["Palavras-Chave"].apply(lambda x: [normalizar_texto(p) for p in x.split(",")])
         return df
